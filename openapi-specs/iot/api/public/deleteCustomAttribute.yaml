@@ -27,6 +27,8 @@ responses:
             $ref: "../../components/examples.yaml#/examples/BadRequestResponseExample"
           Forbidden access:
             $ref: "../../components/examples.yaml#/examples/UnauthorizedResponseExample"
+          Managed by Action Center:
+            $ref: "../../components/examples.yaml#/examples/ActionCenterManagedResponseExample"
           Too many requests:
             $ref: "../../components/examples.yaml#/examples/RateLimitResponseExample"
   "5XX":

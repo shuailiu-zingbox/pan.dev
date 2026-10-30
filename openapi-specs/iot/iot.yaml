@@ -111,7 +111,7 @@ paths:
 
   /iot/pub/v1/tag:
     post:
-      description: "Adding manual tag to the devices. <br/> For customers using the IoT Standalone Portal, refer to IoT Standalone Public API Authentication page."
+      description: "Adding manual tag to the devices. <br/> For customers using the IoT Standalone Portal, refer to IoT Standalone Public API Authentication page.<br/><br/>Not available when the tenant manages its tags and custom attributes with Action Center rules: this API then returns 403 Forbidden. Change tags and custom attributes in the Action Center instead."
       operationId: tag
       security:
         - X-Key-Id:  []
@@ -126,7 +126,7 @@ paths:
       responses:
         $ref: "api/public/addingTag.yaml#/responses"
     delete:
-      description: "Removing manual tag from the devices. <br/> For customers using the IoT Standalone Portal, refer to IoT Standalone Public API Authentication page."
+      description: "Removing manual tag from the devices. <br/> For customers using the IoT Standalone Portal, refer to IoT Standalone Public API Authentication page.<br/><br/>Not available when the tenant manages its tags and custom attributes with Action Center rules: this API then returns 403 Forbidden. Change tags and custom attributes in the Action Center instead."
       operationId: removingTag
       security:
         - Bearer: []
@@ -330,7 +330,7 @@ paths:
 
   /iot/pub/v1/device/bulkUpdate?updateSource=customAttribute:
     put:
-      description: "Update devices custom attributes values <br/> For customers using the IoT Standalone Portal, refer to IoT Standalone Public API Authentication page."
+      description: "Update devices custom attributes values <br/> For customers using the IoT Standalone Portal, refer to IoT Standalone Public API Authentication page.<br/><br/>When the tenant manages its custom attributes with Action Center rules: a value set through this API is a manual value and takes priority over values that rules assign. A value that is not yet one of the attribute's values is added to the attribute, within the attribute's value limit. An empty value, or the attribute's default value, clears only manual values: a value assigned by a rule is kept and reported in errorCases."
       operationId: custom-attribute-bulk-update
       security:
         - Bearer: []
@@ -591,7 +591,7 @@ paths:
 
   /iot/pub/v1/customAttribute:
     post:
-      description: "Create a custom attribute. <br/> For customers using the IoT Standalone Portal, refer to IoT Standalone Public API Authentication page."
+      description: "Create a custom attribute. <br/> For customers using the IoT Standalone Portal, refer to IoT Standalone Public API Authentication page.<br/><br/>Not available when the tenant manages its tags and custom attributes with Action Center rules: this API then returns 403 Forbidden. Change tags and custom attributes in the Action Center instead."
       operationId: create-custom-attribute
       security:
         - Bearer: []
@@ -605,7 +605,7 @@ paths:
       responses:
         $ref: "api/public/createCustomAttribute.yaml#/responses"
     put:
-      description: "Update a custom attribute. <br/> For customers using the IoT Standalone Portal, refer to IoT Standalone Public API Authentication page."
+      description: "Update a custom attribute. <br/> For customers using the IoT Standalone Portal, refer to IoT Standalone Public API Authentication page.<br/><br/>Not available when the tenant manages its tags and custom attributes with Action Center rules: this API then returns 403 Forbidden. Change tags and custom attributes in the Action Center instead."
       operationId: update-custom-attribute
       security:
         - Bearer: []
@@ -619,7 +619,7 @@ paths:
       responses:
         $ref: "api/public/updateCustomAttribute.yaml#/responses"
     delete:
-      description: "Delete a custom attribute. <br/> For customers using the IoT Standalone Portal, refer to IoT Standalone Public API Authentication page."
+      description: "Delete a custom attribute. <br/> For customers using the IoT Standalone Portal, refer to IoT Standalone Public API Authentication page.<br/><br/>Not available when the tenant manages its tags and custom attributes with Action Center rules: this API then returns 403 Forbidden. Change tags and custom attributes in the Action Center instead."
       operationId: delete-custom-attribute
       security:
         - Bearer: []

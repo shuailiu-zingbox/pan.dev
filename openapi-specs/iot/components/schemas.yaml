@@ -1148,7 +1148,7 @@ schemas:
         description: 'The number of attributes that IoT Security successfully updated'
       errorCases:
         type: Object
-        description: 'The cases that are not valid to update custom attribute'
+        description: 'The cases that are not valid to update custom attribute. Each case is the request entry with an errMsg that says why it was not updated.'
 
 
   BulkUpdateIPAMSubnetResponseSchema:

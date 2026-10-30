@@ -11,6 +11,12 @@ examples:
       msg: Forbidden access. Either the provided API key is invalid or it does not have the required RBAC permissions to run this API.
     }
 
+  ActionCenterManagedResponseExample:
+    value: {
+      code: 403,
+      message: "Error: tags and custom attributes of this tenant are managed by action sets in the Action Center and cannot be changed through this API"
+    }
+
   RateLimitResponseExample:
     value: {
       code: 429,
