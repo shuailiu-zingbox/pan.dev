@@ -1,0 +1,33 @@
+openapi-specs/iot/api/public/addingTag.yaml
+  s_e42168cc47f464::t_710eca50b9fc91 57-58
+openapi-specs/iot/components/schemas.yaml
+  s_e42168cc47f464::t_710eca50b9fc91 1151
+openapi-specs/iot/components/examples.yaml
+  s_e42168cc47f464::t_710eca50b9fc91 14-19
+openapi-specs/iot/api/public/removingTag.yaml
+  s_e42168cc47f464::t_710eca50b9fc91 57-58
+openapi-specs/iot/api/public/updateCustomAttribute.yaml
+  s_e42168cc47f464::t_710eca50b9fc91 56-57
+openapi-specs/iot/api/public/deleteCustomAttribute.yaml
+  s_e42168cc47f464::t_710eca50b9fc91 30-31
+openapi-specs/iot/iot.yaml
+  s_e42168cc47f464::t_710eca50b9fc91 114,129,333,594,608,622
+openapi-specs/iot/api/public/createCustomAttribute.yaml
+  s_e42168cc47f464::t_710eca50b9fc91 56-57
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.24",
+  "base_commit_sha": "26e5cc3a73c6d4f361ba0688f379767139e69f9c",
+  "prompts": {},
+  "sessions": {
+    "s_e42168cc47f464": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "45a19ed9-1854-441d-8bc5-ed9c984003d6",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "shliu@paloaltonetworks.com <shliu@paloaltonetworks.com>"
+    }
+  }
+}
